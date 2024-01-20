@@ -2,9 +2,6 @@
 ## Overview
 This project is a simple implementation of the classic Tic-Tac-Toe game using HTML, JavaScript, and jQuery. It allows two players to take turns marking the spaces on a 3x3 grid with 'X' and 'O'. The game checks for a winner or a draw after each move.
 
-## Live Demo
-
-Check out the live demo [here](https://zipic.github.io/tik-tak-toe/).
 
 ## Features
 Interactive gameplay for two players.
