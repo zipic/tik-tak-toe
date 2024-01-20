@@ -25,7 +25,7 @@ function handleClick(button) {
 
   gameBoardState[index] = currentPlayer;
 
-  const imageUrl = currentPlayer === 'X' ? '../images/cross.svg' : '../images/circle1.svg';
+  const imageUrl = currentPlayer === 'X' ? '/images/cross.svg' : '/images/circle1.svg';
   $(button).css({
     'background-image': 'url(' + imageUrl + ')',
     'background-size': 'cover',
