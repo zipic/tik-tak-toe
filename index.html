@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tik-tak-toe</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <h1>tik tak toe</h1>
+  <button class="play" id="playButton" onclick="showMenu()">Почати</button>
+  <div class="menu hidden">
+    <p class="choose">Зробіть вибір</p>
+    <div class="choosebox">
+    <button class="cross" onclick="selectItem()">
+      <img class="images" src="../images/cross.svg" alt="cross">
+      </button>
+      <button class="circle" onclick="selectItem()">
+      <img class="images2" src="../images/circle1.svg" alt="zero">
+      </button>
+    </div>
+  </div>
+
+  <main class="game hidden">
+    <p id="currentPlayer"></p>
+    <table class="yard">
+      <tr>
+          <td>
+              <button class="sq 1" onclick="handleClick(this)"></button>
+          </td>
+          <td>
+              <button class="sq 2" onclick="handleClick(this)"></button>
+          </td>
+          <td>
+              <button class="sq 3" onclick="handleClick(this)"></button>
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <button class="sq 4" onclick="handleClick(this)"></button>
+          </td>
+          <td>
+              <button class="sq 5" onclick="handleClick(this)"></button>
+          </td>
+          <td>
+              <button class="sq 6" onclick="handleClick(this)"></button>
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <button class="sq 7" onclick="handleClick(this)"></button>
+          </td>
+          <td>
+              <button class="sq 8" onclick="handleClick(this)"></button>
+          </td>
+          <td>
+              <button class="sq 9" onclick="handleClick(this)"></button>
+          </td>
+      </tr>
+  </table>
+  </main>
+  <div class="statistic hidden" id="statistic">
+    <table class="stats-table">
+      <thead>
+        <tr>
+          <th>Гравець Х</th>
+          <th>Гравець О</th>
+        </tr>
+      </thead>
+      <tbody class="table">
+      </tbody>
+    </table>
+    <div class="buttons">
+      <button onclick="finishGame()">Завершити гру</button>
+      <button onclick="playAgain()">Грати ще раз</button>
+    </div>
+  </div>
+  
+  
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="src/script.js"></script>
+</body>
+</html>
