@@ -81,7 +81,12 @@ function checkForWinner() {
 }
 
 function checkForTie() {
-  return gameBoardState.every(cell => cell !== '');
+  if (gameBoardState.every(cell => cell !== '')) {
+    playerX.push(0);
+    playerO.push(0);
+    return true;
+  }
+  return false;
 }
 
 function resetGame() {
